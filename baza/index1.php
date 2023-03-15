@@ -27,9 +27,9 @@ if($link === false){
 }
  
 // Attempt insert query execution
-$sql = "SELECT plyty1 (id, url1, wykonawca, tytul, rok) FROM plyty1";
+$sql = "INSERT INTO persons (first_name, last_name, email) VALUES ('Peter', 'Parker', 'peterparker@mail.com')";
 if(mysqli_query($link, $sql)){
-    echo "Records getting successfully.";
+    echo "Records inserted successfully.";
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }

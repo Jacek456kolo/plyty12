@@ -3,14 +3,6 @@ body {
 	//background-color: blue;
 }
 
-.ramka
-{
-border-style: solid;
-border-width: thick;
-border-color: black;
-background-color: blue;
-margin-right: 200px;
-}
 
 .plyta1
 {
@@ -22,7 +14,7 @@ display: flex;
 
 .pl1
 {
-//text-align: left;
+text-align: left;
 }
 
 .pl2

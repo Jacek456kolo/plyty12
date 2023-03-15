@@ -19,7 +19,7 @@
 		<?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
-$link = mysqli_connect("127.0.0.1", "root", "", "baza1");
+$link = mysqli_connect("localhost", "root", "", "baza1");
  
 // Check connection
 if($link === false){
@@ -27,9 +27,9 @@ if($link === false){
 }
  
 // Attempt insert query execution
-$sql = "SELECT plyty1 (id, url1, wykonawca, tytul, rok) FROM plyty1";
+$sql = "DELETE FROM persons WHERE 1";
 if(mysqli_query($link, $sql)){
-    echo "Records getting successfully.";
+    echo "Records inserted successfully.";
 } else{
     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
 }
