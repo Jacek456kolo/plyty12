@@ -41,9 +41,8 @@ if (mysqli_num_rows($result) > 0) {
 <div class="ramka">
 				<div class="plyta1">
 					<div>
-						<img src="<?php echo $row["url1"]?>" width="100px"; height="100px">
-						<a href="http://www.localhost/plyty/plyta.php?name=<?php echo $row["wykonawca"] ?>"></div>
-						<div>						
+						<img src="<?php echo $row["url1"]?>"></div>
+					<div>
 						<div class="pl1">"<?php echo $row["wykonawca"]?>"</div>
 						<div class="pl2">"<?php echo $row["tytul"]?>"</div>
 						<div class="pl3">"<?php echo $row["rok"]?>"</div>

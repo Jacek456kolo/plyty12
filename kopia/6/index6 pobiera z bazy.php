@@ -35,24 +35,8 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
   // output data of each row
   while($row = mysqli_fetch_assoc($result)) {
-//    echo "id: " . $row["id"]. " - nr: " . $row["url1"]. " wykonawca: " . //$row["wykonawca"]. " tytul: " . $row["tytul"]. " rok: " . //$row["rok"]."<br>";
-
-?>
-<div class="ramka">
-				<div class="plyta1">
-					<div>
-						<img src="<?php echo $row["url1"]?>" width="100px"; height="100px">
-						<a href="http://www.localhost/plyty/plyta.php?name=<?php echo $row["wykonawca"] ?>"></div>
-						<div>						
-						<div class="pl1">"<?php echo $row["wykonawca"]?>"</div>
-						<div class="pl2">"<?php echo $row["tytul"]?>"</div>
-						<div class="pl3">"<?php echo $row["rok"]?>"</div>
-					</div>
-					
-				</div>
-			</div>
-			<?php
-}
+    echo "id: " . $row["id"]. " - nr: " . $row["url1"]. " wykonawca: " . $row["wykonawca"]. " tytul " . $row["tytul"]. " rok: " . $row["rok"]."<br>";
+  }
 } else {
   echo "0 results";
 }
