@@ -47,9 +47,9 @@ if (mysqli_num_rows($result) > 0) {
 		</div>
 		<div>
 			<a href="http://www.localhost/plyty/plyta.php?name=<?php echo $row["wykonawca"] ?>">
-				<div class="pl1"><?php echo $row["wykonawca"]?></div>
-				<div class="pl2"><?php echo $row["tytul"]?></div>
-				<div class="pl3"><?php echo $row["rok"]?></div>
+				<div class="pl1">"<?php echo $row["wykonawca"]?>"</div>
+				<div class="pl2">"<?php echo $row["tytul"]?>"</div>
+				<div class="pl3">"<?php echo $row["rok"]?>"</div>
 			</a>
 		</div>
 	</div>

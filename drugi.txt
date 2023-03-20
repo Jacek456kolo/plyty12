@@ -1,8 +1,0 @@
-<div class="ramka">
-				<div class="plyta1">
-					<img src="12850789.jpg">
-					<div class="pl1">POINT BLANK</div>
-					<div class="pl2"><br>Second Season</div>
-					<div class="pl3"><br><br>1977</div>
-				</div>
-			</div>
