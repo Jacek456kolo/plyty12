@@ -41,7 +41,7 @@ if (mysqli_num_rows($result) > 0) {
 <div class="ramka">
 	<div class="plyta1">
 		<div>
-			<a href="http://www.localhost/plyty12/plyta.php?name=<?php echo $row["wykonawca"] ?>">
+			<a href="http://www.localhost/plyty/plyta.php?name=<?php echo $row["wykonawca"] ?>">
 				<img src="<?php echo $row["url1"]?>" width="100px"; height="100px">
 			</a>
 		</div>

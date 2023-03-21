@@ -16,6 +16,7 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
+#$sql = "SELECT id, url1, wykonawca, tytul, rok FROM plyty1 WHERE wykonawca=albatros";
 
 $sql = "SELECT id, url1, wykonawca, tytul, rok FROM plyty1 WHERE wykonawca='" . $_GET["name"] . "'";
 
